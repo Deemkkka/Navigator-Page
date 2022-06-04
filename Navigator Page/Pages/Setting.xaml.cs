@@ -13,19 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Navigator_Page
+namespace PageNavigation.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Interaction logic for Setting.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Setting : Page
     {
-        public MainWindow()
+        public Setting()
         {
             InitializeComponent();
         }
-
-        
-
     }
 }

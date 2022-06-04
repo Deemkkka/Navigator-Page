@@ -12,20 +12,29 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Navigation;
+using Navigator_Page;
 
-namespace Navigator_Page
+namespace PageNavigation.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Interaction logic for Landing.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Landing : Page
     {
-        public MainWindow()
+        public Landing()
         {
             InitializeComponent();
         }
 
-        
+        private void Grid_Click(object sender, RoutedEventArgs e)
+        {
 
+            var ClickBtn = e.OriginalSource as NavigationButton;
+            NavigationService.Navigate(ClickBtn.NavigationUri);
+
+
+
+        }
     }
 }

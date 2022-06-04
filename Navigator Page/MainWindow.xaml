@@ -11,6 +11,11 @@
     
     
     <Grid>
-        
+
+        <!--<local:NavigationButton Text="Jamie"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center" 
+                                ImageSource="/Images/Accounts.png"/>-->
+        <Frame Source="/Pages/Landing.xaml" NavigationUIVisibility="Hidden"/>
     </Grid>
 </Window>
